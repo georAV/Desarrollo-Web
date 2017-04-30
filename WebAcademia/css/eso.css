@@ -1,0 +1,52 @@
+#eso{
+	border-bottom:1px solid #04B4AE;
+	color: #04B4AE;
+	font-weight:bold;
+}
+section{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+section h2{
+	text-align:center;
+	color:#04B4AE;
+	font-size:22px;
+	}
+article{
+	float:left;
+	width:46%;
+	margin:0 2%;
+	text-align:center;
+	height:auto;
+	padding:2%;
+	font-size:20px;
+}
+#parrafo1{
+	border-left:10px solid #ccc;
+	text-align:justify;
+	padding:4%;
+	font-size:14px;
+}
+@media screen and (max-width:1100px)
+{
+	article{
+	   width:96%;
+	   margin-bottom:3%;
+   }
+   #parrafo1{
+	   border-left:none;
+	   border-top:10px solid #ccc;
+   }
+}
+
+@media screen and (max-width:700px) 
+{
+   article{
+	   width:96%;
+   }
+   iframe
+     {
+	   width:100%;
+   }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	
+	<head>
+		<title> Inicio </title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Practica 4. Login" />
+		<meta name="author" content="Georgina Abellán" />
+		<link href="estilo/estilo_login.css" rel="stylesheet" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/codigo_login.js"></script>
+
+	</head>
+	
+	<body>
+		<form id="Registro" method="post" action="login.php" onsubmit="return validaLogin()">
+			<h1>LOGIN</h1>
+			<ul>
+				<li>
+					<label for="usuario">Usuario</label>
+					<input type="text" id="usuario" name="usuario" onblur="return validaUsuario()" />
+					<span id="mensaje1"></span>
+				</li>
+				<li>
+					<label for="password1">Contraseña</label>
+					<input type="password" id="password1" name="password1" onblur="return validaContr()"/>
+					<span id="mensaje2"></span>
+				</li>
+				<li>
+					<input type="submit" id="login" value="Entrar"/>
+				</li>
+	</body>
+</html>

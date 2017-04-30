@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	
+	<head>
+		<title> Inicio </title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Practica 4. Registro" />
+		<meta name="author" content="Georgina Abellán" />
+		<link href="estilo/estilo_registro.css" rel="stylesheet" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/codigo_registro.js"></script>
+
+	</head>
+	
+	<body>
+		<form id="Registro" method="post" action="registro.php" onsubmit="return validaLogin()">
+			<h1>REGISTRO</h1>
+			<ul>
+				<li>
+					<label for="usuario">Usuario</label>
+					<input type="text" id="usuario" name="usuario" onblur="return validaUsuario()"/>
+					<span id="mensaje1"></span>
+				</li>
+				<li>
+					<label for="password1">Contraseña</label>
+					<input type="password" id="password1" name="password1" onblur="return validaContr()"/>
+					<span id="mensaje2"></span>
+				</li>
+				<li>
+					<label for="password2">Repite contraseña</label>
+					<input type="password" id="password2" name="password2" onblur="return validaContr2()"/>
+					<span id="mensaje3"></span>
+				</li>
+				<li>
+					<label for="email">E.mail</label>
+					<input type="text" id="email" name="email" onblur="return validaEmail()"/>
+					<span id="mensaje4"></span>
+				</li>
+				<li>
+					<label for="fecha">Fecha Nacimiento</label>
+					<input type="text" id="fecha" name="fecha" onblur="return validaFecha()"/>
+					<span id="mensaje5"></span>
+				</li>
+				<li>
+					<input type="submit" id="login" value="Enviar"/>
+				</li>
+	</body>
+</html>

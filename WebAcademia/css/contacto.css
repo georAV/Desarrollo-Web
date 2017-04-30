@@ -1,0 +1,74 @@
+#cont{
+	border-bottom:1px solid #04B4AE;
+	color: #04B4AE;
+	font-weight:bold;
+}
+section{
+	clear:both;
+	border-top:1px solid grey;
+	height:555px;
+	font-size:20px;
+	font-family:Comforta;
+}
+article{
+	float:left;
+	margin:4% 2%;
+	font-size:16px;
+	width:46%;
+}
+.linea{
+	overflow:hidden;
+	margin: 2% auto;
+	width:95%;
+	height:40px;
+}
+.texto, .control{
+	float:left;
+	width: 30%;
+}
+.texto{
+	text-align:right;
+	margin:1% 2%;
+}
+article p{
+	text-align:center;
+	margin: 1% auto;
+	color:#04B4AE;
+}
+input, select{
+	width:200%;
+	height:25px;
+}
+#boton{
+	width:70%;
+	background-color:#04B4AE;
+	border:none;
+	color:white;
+}
+#boton:hover{
+	background-color:#01DFD7;
+}
+@media screen and (max-width:1100px)
+{
+	article{
+		width:85%;
+	}
+}
+
+@media screen and (max-width:700px) 
+{
+	article{
+		width:100%;
+	}
+	.texto{
+		display:none;
+	}
+	.linea{
+		height:50px;
+}
+	input, select{
+		width:270%;
+		height:35px;
+		margin:3% 25%;
+	}
+}

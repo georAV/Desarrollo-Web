@@ -1,0 +1,152 @@
+*{
+	box-sizing:border-box;
+	margin:0px;
+}
+@font-face{
+	font-family: Comforta;
+	src: url(../fuentes/Comforta.ttf);
+}
+body{
+	width:100%;
+	font-family:sans-serif;
+	height:680px;
+	background-color:#E6E6E6;
+}
+header, #idiomas, #menu1{
+	float:left;
+	height:100px;
+	padding:3% 0% 2% 0%;
+	text-align:center;
+	background-color:white;
+}
+header{
+	width:35%;
+	font-size:140%;
+	padding:1.8%;
+}
+h1, h2, #info{
+	font-family:Comforta;
+}
+#idiomas{
+	width:15%;
+	padding-top:3.5%;
+	font-size:12px;
+}
+#menu1{
+	width:50%;
+	font-size:14px;
+}
+ul{
+	width:100%;
+	padding:0%;
+}
+li{
+	display:inline;
+	margin:1%;
+	padding:1%;
+}
+a{
+	text-decoration:none;
+	padding:1%;
+	color:GREY;
+}
+a:hover{
+	color:#04B4AE;
+}
+#menu2{
+	clear:both;
+	text-align:center;
+	height:60px;
+	font-size:14px;
+	padding:4% 0;
+	overflow:hidden;
+}
+#menu2 ul{
+	width:45%;
+	margin:auto;
+}
+#info{
+	width:100px;
+	height:40px;
+	border:none;
+	background-color:#CCC;
+	font-size:16px;
+	outline:none;
+}
+#info:hover{
+	background-color:white;
+}
+footer{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	font-size:12px;
+	background-color:white;
+	padding:1%;
+	text-align:center;
+	border-top:1px solid grey;
+}
+@media screen and (max-width:1100px)
+{
+	header, #idiomas, #menu1{
+		height:80px;
+	}
+	header, #idiomas{
+		width:50%;
+	}
+	#menu1{
+		width:100%;
+	}
+	header{
+		text-align:right;
+	}
+	#idiomas{
+		padding-top:4%;
+	}
+	#menu2 ul{
+	   width:100%;
+	   margin:0%;
+   }
+}
+
+@media screen and (max-width:700px) 
+{
+	header, #idiomas{
+		width:100%;
+		height:50px;
+	}
+	header{
+		text-align:center;
+		font-size:18px;
+		height:auto;
+	}
+	#menu2{
+	   font-size:10px;
+	   height:55px;
+	   padding:6% 0;
+	   border-top:2px solid grey;
+    }
+    #menu2 ul{
+	   width:100%;
+	   margin:0%;
+    }
+}
+@media screen and (max-width:500px) 
+{
+	#menu1{
+		float:left;
+		height:auto;
+		padding:0px 5%; 
+		border-top:2px solid grey; 
+		text-align:left;
+		}
+    #menu1 li{
+		display:block;
+		font-size:14px;
+		margin:0%; 
+		padding:2% 0%;
+		}
+	#menu1 a{
+		border:none;
+		}
+}

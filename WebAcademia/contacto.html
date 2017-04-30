@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" charset="UTF-8" />
+		<title> Contacto</title>
+		<link rel="stylesheet" type="text/css" href="css/plantilla.css" >
+		<link rel="stylesheet" type="text/css" href="css/contacto.css" >
+		<script type="text/javascript" src="js/codigo.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Academia DIW</H1>
+		</header>
+		<nav id="idiomas">
+			<ul>
+				<li><a id="esp" href="contacto.html">Español</a></li>
+				<li><a id="eng" href="ingles/contacto_engl.html">English</a></li>
+			</ul>
+		</nav>
+		<nav id="menu1">
+			<ul>
+				<li><a href="inicio.html">Inicio</a></li>
+				<li><a href="eso.html">ESO</a></li>
+				<li><a href="bachiller_inicio.html">Bachiller</a></li>
+				<li><a href="ciclos_inicio.html">Ciclos</a></li>
+				<li><a href="universidad.html">Universidad</a></li>
+				<li><a href="contacto.html" id="cont">Contacto</a></li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				<p>Formulario de contacto:</p></br>
+				<form id="formulario" method="post" action="#" onsubmit="return validaFormulario();">
+					<div class="linea">
+						<div class="texto">Nombre</div>
+						<div class="control"><input id="nombre" type="text" value="Nombre";"/></div>
+					</div>
+					<div class="linea">
+						<div class="texto">Apellidos</div>
+						<div class="control"><input id="apellidos" type="text" value="Apellidos"/></div>
+					</div>
+					<div class="linea">
+						<div class="texto">Email</div>
+						<div class="control"><input id="email" type="text" value="Email";"/></div>
+					</div>
+					<div class="linea">
+						<div class="texto">Teléfono</div>
+						<div class="control"><input id="tlf" type="text" value="Teléfono"/></div>
+					</div>
+					<div class="linea">
+						<div class="texto">Móvil</div>
+						<div class="control"><input id="movil" type="text" value="Móvil"/></div>
+					</div>
+					<div class="linea">
+						<div class="texto">Estudios</div>
+						<div class="control">
+							<select id="estudios">
+								<option value="default" selected>Estudios</option>
+								<option value="Universitarios">Universitarios</option>
+								<option value="Formación profesional">Formación profesional</option>
+								<option value="Secundaria">Bachillerato</option>
+								<option value="ESO">ESO</option>
+							</select>
+						</div>
+						<!--<div class="control"><input id="estudios" type="text" value="Estudios"/></div>-->
+					</div>
+					<div class="linea">
+						<div class="texto">&nbsp;</div>
+						<div class="control"><input type="submit" id="boton" value="Enviar"/></div>
+					</div>
+				</form>
+				<p id="error"></p>
+			</article>
+		</section>
+		<footer>
+			<p>&copy 2016 Academia DIW</p>
+		</footer>
+	</body>
+</html>
